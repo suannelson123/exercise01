@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Product preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      @font-face {
+        font-family: Noto Sans Soyombo;
+        src: url(Fonts/NotoSansSoyombo-Regular.ttf);
+      }
+      @font-face {
+        font-family: Diphylleia-Regular;
+        src: url(Fonts/Diphylleia-Regular.ttf);
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: rgb(248 217 176 / 26%);
+      }
+
+      .container {
+        display: flex;
+        width: 600px;
+        height: 400px;
+        background-color: rgb(255, 255, 255);
+        border: 1px solid rgb(204, 204, 204);
+        border-radius: 9px;
+        padding: 0px;
+      }
+
+      .container img {
+        margin-right: 200px;
+        padding-right: 40px;
+        width: 90%;
+        height: 100%;
+        border-radius: 9px;
+        border: none;
+        max-width: 100%;
+        max-height: 100%;
+      }
+
+      h4 {
+        font-family: Noto Sans Soyombo;
+        letter-spacing: 5px;
+        color: rgb(128, 128, 128);
+      }
+
+      h1 {
+        font-family: Diphylleia-Regular;
+      }
+      p {
+        width: 247px;
+        color: rgb(128, 128, 128);
+        font-family: sans-serif;
+      }
+
+      .container .price {
+        color: rgb(24 115 25 / 75%);
+      }
+
+      .price h1 {
+        display: inline;
+        margin-right: 20px;
+      }
+
+      .price p {
+        display: inline;
+        color: rgb(128, 128, 128);
+        position: relative;
+        bottom: 5px;
+        text-decoration: line-through;
+      }
+
+      .add-to-cart {
+        width: 250px;
+        height: 50px;
+        background-color: rgb(24 115 25 / 75%);
+        border-radius: 10px;
+        margin-top: 10px;
+      }
+
+      .add-to-cart .icon {
+        width: 250px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgb(255, 255, 255);
+      }
+      .icon p {
+        width: 81px;
+        color: rgb(255, 255, 255);
+        padding-left: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <img src="images/image-product-desktop.jpg" alt="Perfume-icon" />
+      </div>
+      <div>
+        <h4>PERFUME</h4>
+        <h1>Gabrielle Essence Eau De Parfum</h1>
+        <p>
+          A floral, solar and voluptuous interpretation composed by Olivier
+          Polge, Perfumer-Creator for the House of CHANEL.
+        </p>
+        <div class="price">
+          <h1>$149.99</h1>
+          <p>169.99</p>
+        </div>
+        <div class="add-to-cart">
+          <div class="icon">
+            <ion-icon name="cart-outline"></ion-icon>
+            <p>Add to Cart</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
